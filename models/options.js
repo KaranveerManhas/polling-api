@@ -5,14 +5,18 @@ const optionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    question: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Question'
+    },
+
     votes: {
         type: Number,
-        required: true,
         default: 0
     },
+
     link_to_vote: {
         type: String,
-        required: true
     }
 }, {
     timestamps: true

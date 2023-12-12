@@ -6,6 +6,7 @@ dotenv.config();
 
 const db = require('./config/mongoose');
 
+app.use(express.urlencoded());
 
 
 app.use('/', require('./routes'));
