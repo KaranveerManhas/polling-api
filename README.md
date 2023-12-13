@@ -44,6 +44,16 @@ The Polling API is a simple yet powerful RESTful API for conducting polls and su
 
 The Polling API should now be running at `http://localhost:1000`.
 
+## Routes
+**The API has the following Routes**:
+**Make sure to prefix /api/v1/ before each route**
+- /questions/create : To create a question
+- /questions/:id : To view question
+- /questions/:id/options/create - To create an option for a question
+- /questions/:id/delete - To delete a question
+- /options/:id/add_vote - To add a vote to an option
+- /options/:id/delete - To delete an option
+
 ## Contributing
 
 I welcome contributions! If you find any issues or have any suggestions for improvements, please open an issue or submit a pull request.
