@@ -46,7 +46,7 @@ The Polling API should now be running at `http://localhost:1000`.
 
 ## Routes
 **The API has the following Routes**:
-**Make sure to prefix /api/v1/ before each route**
+**Make sure to prefix /api/v1/ to each route**
 - /questions/create : To create a question
 - /questions/:id : To view question
 - /questions/:id/options/create - To create an option for a question
