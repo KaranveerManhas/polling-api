@@ -13,7 +13,7 @@ module.exports.create = async function(req, res){
 
         let question = await Question.findById(req.params.id);
 
-        option.link_to_vote = `http://localhost:1000/api/v1/options/${option._id}/add_vote`;
+        option.link_to_vote = `https://polling-api-bx5l.onrender.com/api/v1/options/${option._id}/add_vote`;
         
         await option.save();
 
